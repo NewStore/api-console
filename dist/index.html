@@ -5,14 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>API Console</title>
   <link href="styles/api-console-light-theme.css" rel="stylesheet" class="theme">
+
 </head>
 <body ng-app="ramlConsoleApp" ng-cloak class="raml-console-body">
-  <!-- The order of the following console elements is important. Somehow the
-  import/api.raml segment is duplicated onto the raml-console element that comes ahead.
- -->
-  <raml-console src="import/api.raml"></raml-console>
-  <raml-console src="consumer/api.raml"></raml-console>
-  <raml-console src="hq/api.raml"></raml-console>
+  <raml-console src="api.raml"></raml-console>
+
   <script src="scripts/api-console-vendor.js"></script>
   <script src="scripts/api-console.js"></script>
   <script>
